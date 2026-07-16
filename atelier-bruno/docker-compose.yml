@@ -1,0 +1,24 @@
+# Mock local du Train Travel API, servi depuis le contrat fourni.
+#
+# Démarrer :  docker compose up
+# Puis :      http://localhost:4010  (Bruno, curl, navigateur...)
+#
+# C'est une API d'exemple, déjà conçue : vous tapez dessus pour prendre Bruno
+# en main. Prism la sert en local — pas de dépendance à un mock hébergé.
+
+services:
+  mock:
+    image: stoplight/prism:5
+    # -h 0.0.0.0 : sans ça, Prism n'écoute qu'à l'intérieur du conteneur
+    #              et reste injoignable depuis votre machine.
+    # -m false   : le mode multiprocess de Prism est cassé sur cette image
+    #              (le conteneur s'arrête aussitôt en affichant son aide).
+    command: mock -h 0.0.0.0 -m false /tmp/openapi.yaml
+    volumes:
+      - ./openapi.yaml:/tmp/openapi.yaml:ro
+      # Le contrat externalise une description dans docs/ (un $ref vers un
+      # fichier voisin) : il faut monter ce dossier, sinon Prism ne résout
+      # pas la référence et refuse de démarrer.
+      - ./docs:/tmp/docs:ro
+    ports:
+      - "4010:4010"
