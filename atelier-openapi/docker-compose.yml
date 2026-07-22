@@ -3,8 +3,8 @@
 # Démarrer :  docker compose up
 # Puis :      http://localhost:4010  (Bruno, curl, navigateur...)
 #
-# Prism relit openapi.yaml à chaque requête : modifiez votre contrat,
-# rejouez la requête, le mock a déjà changé. Pas besoin de redémarrer.
+# Prism surveille votre contrat : modifiez openapi.yaml, rejouez la requête,
+# le mock a déjà changé. Pas besoin de redémarrer.
 
 services:
   mock:
@@ -15,6 +15,10 @@ services:
     #              (le conteneur s'arrête aussitôt en affichant son aide).
     command: mock -h 0.0.0.0 -m false /tmp/openapi.yaml
     volumes:
-      - ./openapi.yaml:/tmp/openapi.yaml:ro
+      # On monte le DOSSIER, pas le fichier seul. Un montage de fichier est
+      # résolu vers son inode, que votre éditeur remplace à l'enregistrement :
+      # le conteneur continuerait de voir l'ancienne version, et vos
+      # modifications n'atteindraient jamais le mock.
+      - .:/tmp:ro
     ports:
       - "4010:4010"

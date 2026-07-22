@@ -15,10 +15,11 @@ services:
     #              (le conteneur s'arrête aussitôt en affichant son aide).
     command: mock -h 0.0.0.0 -m false /tmp/openapi.yaml
     volumes:
-      - ./openapi.yaml:/tmp/openapi.yaml:ro
-      # Le contrat externalise une description dans docs/ (un $ref vers un
-      # fichier voisin) : il faut monter ce dossier, sinon Prism ne résout
-      # pas la référence et refuse de démarrer.
-      - ./docs:/tmp/docs:ro
+      # On monte le DOSSIER entier, pas les fichiers un par un. Deux raisons :
+      # le contrat externalise une description dans docs/ (un $ref vers un
+      # fichier voisin), qui doit être monté lui aussi ; et un montage de
+      # fichier est résolu vers son inode, donc les modifications faites
+      # depuis votre machine n'atteindraient pas le conteneur.
+      - .:/tmp:ro
     ports:
       - "4010:4010"
