@@ -1,6 +1,6 @@
-# CATAPULTE Connect — module CAP
+# Module CAP — Concevoir une API REST
 
-Module **CAP — Concevoir une API REST**. Coda Dijon, B2.
+Coda Dijon, B2.
 
 Ce dépôt regroupe les ateliers du module. Chaque atelier vit dans son propre dossier,
 avec ses ressources et son `README.md` : ouvrez celui de l'atelier en cours, il vous
@@ -10,8 +10,9 @@ dit tout ce dont vous avez besoin.
 
 | Dossier | Atelier |
 |---|---|
+| [`atelier-curl-quests/`](atelier-curl-quests/) | Les fondamentaux HTTP avec curl |
 | [`atelier-bruno/`](atelier-bruno/) | Prendre en main une API existante avec Bruno |
-| [`atelier-openapi/`](atelier-openapi/) | Concevoir le contrat OpenAPI de CATAPULTE Connect |
+| [`atelier-openapi/`](atelier-openapi/) | Concevoir le contrat OpenAPI du projet |
 
 ## Le linter
 

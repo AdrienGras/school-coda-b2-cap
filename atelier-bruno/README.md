@@ -38,6 +38,13 @@ Le mock ne vérifie pas la *valeur* du jeton, seulement sa **présence** — n'i
 chaîne fait l'affaire. Dans Bruno, ce jeton se pose une fois dans l'onglet **Auth** de la
 requête (type *Bearer*).
 
+## Ce que vous produisez
+
+Votre collection Bruno se crée **dans ce dossier**. Une collection est un dossier de
+fichiers texte : elle se commit, se relit dans un `diff` et se partage comme du code.
+
+C'est tout l'intérêt face à une commande jetée dans un terminal.
+
 ## Attribution
 
 Le contrat de cette API n'est pas de nous. Voir [`NOTICE.md`](NOTICE.md) pour l'auteur
