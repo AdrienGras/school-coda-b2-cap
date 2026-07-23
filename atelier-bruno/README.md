@@ -18,6 +18,9 @@ docker compose up
 L'API est servie en local sur `http://localhost:4010`. Prism la sert depuis le contrat :
 pas de dépendance à un service en ligne.
 
+La documentation du contrat, elle, est servie sur `http://localhost:4011` : le même
+YAML, rendu lisible plutôt que consulté en brut.
+
 ## Une API protégée
 
 Cette API demande une **authentification**. Sans jeton, elle refuse :
