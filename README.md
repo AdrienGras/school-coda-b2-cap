@@ -12,6 +12,7 @@ dit tout ce dont vous avez besoin.
 |---|---|
 | [`atelier-curl-quests/`](atelier-curl-quests/) | Les fondamentaux HTTP avec curl |
 | [`atelier-bruno/`](atelier-bruno/) | Prendre en main une API existante avec Bruno |
+| [`atelier-analyse/`](atelier-analyse/) | Inventorier les points d'entrée du projet |
 | [`atelier-openapi/`](atelier-openapi/) | Concevoir le contrat OpenAPI du projet |
 
 ## Le linter
