@@ -8,7 +8,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 1 — Get
+## 1 — Day 1: Inventory Check
 
 **La situation** :
 
@@ -22,7 +22,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 2 — Post
+## 2 — Day 2: Adding Items
 
 **La situation** :
 
@@ -36,7 +36,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 3 — Put, Patch, Delete
+## 3 — Day 3: Maintain and Update
 
 **La situation** :
 
@@ -50,7 +50,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 4 — Query & Encoding
+## 4 — The Elemental Search
 
 **La situation** :
 
@@ -64,7 +64,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 5 — File Upload
+## 5 — Payslip Uploader
 
 **La situation** :
 
@@ -78,7 +78,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 6 — Headers
+## 6 — Strict API Contracts
 
 **La situation** :
 
@@ -92,7 +92,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 7 — Header Inspection
+## 7 — The Manager's Secret
 
 **La situation** :
 
@@ -106,7 +106,7 @@ Une entrée par quête. Trois lignes chacune, écrites avec mes mots.
 
 ---
 
-## 8 — Status Codes
+## 8 — The Galactic Relay
 
 **La situation** :
 
