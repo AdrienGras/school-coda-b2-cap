@@ -26,7 +26,7 @@ services:
       - "4010:4010"
 
   docs:
-    image: swaggerapi/swagger-ui
+    image: swaggerapi/swagger-ui:v5.32.11
     environment:
       # le fichier est cherché dans le conteneur, à ce chemin exact
       SWAGGER_JSON: /spec/openapi.yaml
