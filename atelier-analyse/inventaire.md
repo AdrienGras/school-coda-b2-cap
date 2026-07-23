@@ -5,7 +5,7 @@ l'écrira.
 
 Une règle : tout ce qui figure ici doit se justifier par la lettre de mission ou par un écran
 des maquettes. Si vous ne savez plus d'où vient une ligne, c'est peut-être qu'elle n'en vient
-pas.
+pas. (Seule exception : la section bonus, si vous en ajoutez une.)
 
 ---
 
@@ -26,7 +26,7 @@ Une action par ligne, en français. Pas encore de chemins.
 Pour chaque point d'entrée : ce qu'il reçoit, ce qu'il renvoie. Nommez les données comme
 l'Office les nomme — les traduire en identifiants techniques, c'est le travail de demain.
 
-###
+### <nom du point d'entrée>
 
 ## Ce dont on n'est pas sûrs
 
